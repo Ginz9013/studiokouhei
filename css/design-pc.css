@@ -1,0 +1,66 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+/* Header */
+header{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 250px;
+  background: white;
+  border-right: 1px solid black;
+}
+
+header .logo{
+  padding: 3rem;
+}
+
+nav{
+  position: relative;
+  left: 100px;
+}
+
+nav ul{
+  display: inline-block;
+  border: 1px solid black;
+  list-style: none;
+  padding: 1.5rem 2rem;
+  background: white;
+  line-height: 2rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+}
+
+/* Main */
+main{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#design{
+  display: grid;
+  grid-template-areas: 
+  'tittle-design tittle-design tittle-design'
+  'design1 design2 design3'
+  'design4 design5 design6';
+}
+
+#tittle-design{
+  grid-area: tittle-design;
+}
+
+#design1{grid-area: design1;}
+#design2{grid-area: design2;}
+#design3{grid-area: design3;}
+#design4{grid-area: design4;}
+#design5{grid-area: design5;}
+#design6{grid-area: design6;}
