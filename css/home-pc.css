@@ -1,0 +1,45 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+/* Header */
+#header-con{
+  display: flex;
+  border: 1px solid black;
+}
+
+#header-con .logo{
+  padding: 2rem 5rem;
+}
+
+#header-con .platform{
+  font-size: 3rem;
+  color: #333333;
+  padding: 5rem;
+}
+
+/* nav */
+
+nav{
+  display: inline-block;
+  position: absolute;
+  left: 5rem;
+  top: 12rem;
+  border: 1px solid black;
+}
+
+nav ul{
+  list-style: none;
+  padding: 2rem 2rem;
+  background: white;
+  line-height: 1.8rem;
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+}
