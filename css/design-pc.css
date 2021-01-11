@@ -46,6 +46,24 @@ main{
   grid-template-columns: 1fr 3fr;
 }
 
+
+/* Design Area */
+#design #tittle-design h4{
+  position: relative;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+#design #tittle-design h4::before{
+  position: absolute;
+  left: 270px;
+  top: 2.8rem;
+  content: ' ';
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
+
 #design{
   display: grid;
   grid-template-areas: 
@@ -64,3 +82,47 @@ main{
 #design4{grid-area: design4;}
 #design5{grid-area: design5;}
 #design6{grid-area: design6;}
+
+#design1, #design2, #design3, #design4, #design5, #design6{
+  padding: 2rem;
+}
+
+/* Illustration Area */
+#illustration #tittle-illustration h4{
+  position: relative;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+#illustration #tittle-illustration h4::before{
+  position: absolute;
+  left: 270px;
+  top: 2.8rem;
+  content: ' ';
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
+
+#illustration{
+  display: grid;
+  grid-template-areas: 
+  'tittle-illustration tittle-illustration tittle-illustration'
+  'illustration1 illustration2 illustration3'
+  'illustration4 illustration5 illustration6';
+}
+
+#tittle-illustration{
+  grid-area: tittle-illustration;
+}
+
+#illustration1{grid-area: illustration1;}
+#illustration2{grid-area: illustration2;}
+#illustration3{grid-area: illustration3;}
+#illustration4{grid-area: illustration4;}
+#illustration5{grid-area: illustration5;}
+#illustration6{grid-area: illustration6;}
+
+#illustration1, #illustration2, #illustration3, #illustration4, #illustration5, #illustration6{
+  padding: 2rem;
+}
