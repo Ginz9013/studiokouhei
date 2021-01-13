@@ -46,15 +46,32 @@ main{
   grid-template-columns: 1fr 3fr;
 }
 
+.showbox{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 50px;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* Design Area */
-#design #tittle-design h4{
+#graphic{
+  display: flex;
+  flex-direction: column;
+}
+
+#graphic #tittle-graphic h4{
   position: relative;
   padding: 2rem;
   margin-top: 5rem;
 }
 
-#design #tittle-design h4::before{
+#graphic #tittle-graphic h4::before{
   position: absolute;
   left: 270px;
   top: 2.8rem;
@@ -64,16 +81,10 @@ main{
   height: 1px;
 }
 
-#design{
+#graphic #showbox-graphic{
   display: grid;
-  grid-template-areas: 
-  'tittle-design tittle-design tittle-design'
-  'design1 design2 design3'
-  'design4 design5 design6';
-}
-
-#tittle-design{
-  grid-area: tittle-design;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 15vw;
 }
 
 #design1{grid-area: design1;}
